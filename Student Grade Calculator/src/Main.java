@@ -1,25 +1,22 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
 import java.util.Scanner;
 
  class StudentGradeCalculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Prompt the user to enter the number of subjects
+        // Prompt the user to enter the number of subjec
         System.out.print("Enter the number of subjects: ");
         int numSubjects = scanner.nextInt();
 
-        // Array to store marks of each subject
         int[] marks = new int[numSubjects];
 
-        // Input marks for each subject
+        
         for (int i = 0; i < numSubjects; i++) {
             System.out.print("Enter marks for subject " + (i + 1) + ": ");
             marks[i] = scanner.nextInt();
         }
 
-        // Calculate total marks
         int totalMarks = 0;
         for (int mark : marks) {
             totalMarks += mark;
