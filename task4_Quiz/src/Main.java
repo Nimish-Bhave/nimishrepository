@@ -43,7 +43,7 @@ import java.util.TimerTask;
         System.out.println("Welcome to the Quiz Application!");
         System.out.println("You have " + QUESTION_TIME_LIMIT_SECONDS + " seconds to answer each question.");
 
-        // Shuffle question bank to randomize question order
+        
         Random rand = new Random();
         for (int i = 0; i < questionBank.size(); i++) {
             int randomIndex = rand.nextInt(questionBank.size());
@@ -52,7 +52,7 @@ import java.util.TimerTask;
             questionBank.set(randomIndex, temp);
         }
 
-        // Start asking questions
+        
         askQuestion();
     }
 
