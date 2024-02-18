@@ -7,7 +7,7 @@ import java.util.TimerTask;
 
  class QuizApplication {
     private static final int QUESTION_TIME_LIMIT_SECONDS = 15;
-    private static final int TOTAL_QUESTIONS = 5;
+    private static final int TOTAL_QUESTIONS = 6;
     private static final int QUESTION_BANK_SIZE = 10;
 
     private static int score = 0;
